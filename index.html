@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dark theme website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/mainlogo.png" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">HIRE ME</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>I'm <span>Tanishq</span> Goel</h1>
+            <p>This is my offical protfolio website to showcase my all works to showcase my all works<br> related to web development and UI design.</p>
+            <a href="">Download CV</a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-behance"></i></a>
+            <a href=""><i class="fab fa-dribbble"></i></a>
+        </div>
+
+        <div class="img-box">
+            <img src="images/mainlogo.png" class="back-img">
+        </div>
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
